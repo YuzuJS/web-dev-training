@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zenon's World</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.css" />
+    <!--
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" /> -->
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+        }
+        .main-header {
+            margin-top: 0;
+            background-color: #eee;
+            padding: 5px;
+            border-bottom: 1px #ccc solid;
+        }
+        .main-header small {
+            font-size: 12px;
+            color: #999;
+        }
+    </style>
+</head>
+
+<body id="app">
+    <h1 class="main-header">Hello World <small>&copy; 2016</small></h1>
+
+    <h2>Things to Know</h2>
+    <ul>
+        <li><a href="https://www.w3.org/">W3C</a> - The standard for html and the browser api (DOM)</li>
+        <li><a href="https://whatwg.org/">WhatWG</a><span>I like this group</span></li>
+    </ul>
+
+    <button>Click Me?</button>
+
+    <section>
+        <h1>The greatest app on the web</h1>
+        <p>Blah blah blah.</p>
+    </section>
+
+    <script>
+        var btn = document.querySelector("button");
+        btn.textContent = "Click Me!";
+
+        btn.addEventListener("click", function () {
+            alert("You clicked me!");
+        });
+    </script>
+</body>
+
+</html>

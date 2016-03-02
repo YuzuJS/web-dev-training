@@ -45,5 +45,13 @@ Repo for teaching web dev.
 - Hijack form submit for custom validation. Prevent submit if form is not valid.
 - Introduced IIFE to create a "module" of code inside app.js
 
-
+## session 04
+- Style our contact form.
+- Base form validation on password.
+- Hide and show error message display. (Use JS to remove a class).
+- New "input" event to listen to changes in the range input.
+    + on input, render the new range input in an output tag.
+- Create a super simple node http server that listens for posts to students.
+    + output form data back to the screen.
+- Standard node module - `http` and `querystring`.
 

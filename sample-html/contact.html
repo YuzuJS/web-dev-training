@@ -21,6 +21,10 @@
 </header>
 
 <section id="content">
+    <div id="error-message" class="hidden error">
+        <span>You passwords did not match!</span>
+    </div>
+
     <form class="student-form" method="POST" action="http://localhost:8080/students">
         <fieldset>
             <legend>Student Information</legend>
@@ -36,25 +40,34 @@
                     <label for="fullname2">Name2</label>
                     <input type="text" id="fullname2"
                            name="fullname2"
-                           placeholder="Enter your name."
+                           placeholder="DISABLED."
                            disabled />
                 </li>
                 <li>
                     <label for="fullname3">Name3</label>
                     <input type="text" id="fullname3"
                            name="fullname3"
-                           placeholder="Enter your name."
+                           value="READ ONLY NAME"
                            readonly />
                 </li>
                 <li>
                     <label for="pwd">Password</label>
                     <input type="password" id="pwd" name="pwd"
-                           placeholder="Enter your pwd."
+                           placeholder="Max 10 chars."
+                           maxlength="10"
+                           required />
+                </li>
+                <li>
+                    <label for="pwd">Confirm</label>
+                    <input type="password" id="confirm-pwd" name="confirm-pwd"
+                           placeholder="Reenter your password."
                            maxlength="10" />
                 </li>
                 <li>
                     <label for="email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your email."/>
+                    <input type="email" id="email" name="email"
+                           placeholder="Enter your email."
+                           required/>
                 </li>
                 <li>
                     <label for="bday">Birthday</label>
@@ -66,7 +79,8 @@
                 </li>
                 <li>
                     <label for="color">Age</label>
-                    <input type="range" min="1" max="140" />
+                    <input type="range" name="age" id="age" value="18" min="1" max="140" />
+                    <output id="age-output">(18)</output>
                 </li>
                 <li>
                     <label for="major">Major</label>

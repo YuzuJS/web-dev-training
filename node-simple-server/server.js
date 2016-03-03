@@ -23,7 +23,8 @@ function handlePostStudents(req, res) {
 
     req.on("end", function() {
         // request ended -> do something with the data
-        res.writeHead(200, "OK", { "Content-Type": "text/html" });
+        res.setHeader("Location", "student-added.html");
+        res.writeHead(303, "OK", { "Content-Type": "text/html" });
 
         // parse the received body data
         var studentInfo = querystring.parse(fullBody);

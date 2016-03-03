@@ -5,6 +5,7 @@ Repo for teaching web dev.
 - [MDN](https://developer.mozilla.org/en-US/)
 - [CanIUse.com](http://caniuse.com/)
 - [HTML5 Rocks!](http://www.html5rocks.com/en/)
+- [node 0.12 API Docs](https://nodejs.org/docs/latest-v0.12.x/api/index.html)
 
 ## session 01
 - Introduce basic html and css concepts.
@@ -55,4 +56,19 @@ Repo for teaching web dev.
     + output form data back to the screen.
 - Standard node module - `http` and `querystring`.
 - To run http server, from the command line `node node-simple-server/server.js`
+
+## session 05
+- Serve static html files from node. No more serveing files from filesystem.
+
+## exercise group 01
+- 404.html
+    + If we get a 404, let's render the `404.html`.
+- 500.html
+    + If we get a 500, let's render the `500.html`.
+- On POST to `/students`
+    + When we POST to /students. The server should redirect to `/student-added.html` (Hint make sure to set the right HTTP status)
+        * The message should be in a box similar to what we did in the error message. Only with green border, green text, and light green background. The message should say "Student has been added. View all students." View all students should be a link `students.html`.
+    + We should save a file "students.json"; This json file should be represent ALL the students. We should APPEND to the array (create the file if does not exist). For extra credit, if the email already exists, we should respond with some sort of 400 error (/student-added.error.html).
+- students.html
+    + A list of students. Hardcode data for now (3 mocks)
 

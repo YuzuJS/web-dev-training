@@ -58,7 +58,10 @@ Repo for teaching web dev.
 - To run http server, from the command line `node node-simple-server/server.js`
 
 ## session 05
-- Serve static html files from node. No more serveing files from filesystem.
+- Serve static html files from node. No more serveing files from filesystem!
+- Use `fs` module to find out if file exists or is a directory.
+- Use `path` module to create valid paths.
+- Use global `process` object to get current working directory.
 
 ## exercise group 01
 - 404.html

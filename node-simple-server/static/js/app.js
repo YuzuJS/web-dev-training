@@ -34,7 +34,7 @@ ContactController.prototype._query = function (selector) {
 };
 
 ContactController.prototype._showErrorMessage = function () {
-    var msgEl = this._query("#error-message");
+    var msgEl = this._query(".error-message");
     msgEl.classList.remove("hidden");
 };
 

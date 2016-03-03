@@ -58,11 +58,6 @@ article p img {
     margin: 10px;
 }
 
-.error {
-    font-weight: bold;
-    color: #FF1515;
-}
-
 .hidden {
     display: none;
 }
@@ -70,13 +65,20 @@ article p img {
     font-size: 28px;
 }
 
-/* Contact Form */
-
-#error-message {
-    border: 1px #FF1515 solid;
-    background-color: #FFDDDD;
+.message {
+    border: 1px #0b4912 solid;
+    background-color: #3cc44c;
     padding: 14px;
     margin: 10px 0;
+}
+
+/* Contact Form */
+
+.error-message {
+    border-color: #FF1515;
+    font-weight: bold;
+    color: #FF1515;
+    background-color: #FFDDDD;
 }
 
 form ol {
@@ -108,3 +110,8 @@ li label:not(:first-of-type) {
 label, input, select {
     line-height: 18px;
 }
+
+/* student-added page */
+ #student-added-message {
+    background: white;
+ }

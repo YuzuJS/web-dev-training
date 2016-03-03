@@ -54,4 +54,5 @@ Repo for teaching web dev.
 - Create a super simple node http server that listens for posts to students.
     + output form data back to the screen.
 - Standard node module - `http` and `querystring`.
+- To run http server, from the command line `node node-simple-server/server.js`
 

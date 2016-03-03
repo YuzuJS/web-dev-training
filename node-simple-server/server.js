@@ -1,13 +1,15 @@
 var http = require("http");
 var querystring = require("querystring");
+var staticFiles = require("./staticFileController");
 
 var server = http.createServer(function(req, res) {
     console.log(req.method + " to " + req.url);
+
     if (req.method === "POST" && req.url === "/students") {
         handlePostStudents(req, res);
+
     } else {
-        res.writeHead(404);
-        res.end();
+        staticFiles.handleRequest(req, res);
     }
 });
 
@@ -21,7 +23,7 @@ function handlePostStudents(req, res) {
 
     req.on("end", function() {
         // request ended -> do something with the data
-        res.writeHead(200, "OK", {"Content-Type": "text/html"});
+        res.writeHead(200, "OK", { "Content-Type": "text/html" });
 
         // parse the received body data
         var studentInfo = querystring.parse(fullBody);

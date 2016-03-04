@@ -36,13 +36,34 @@ nav li a {
     color: white;
     line-height: 32px;
     margin-right: 18px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    color: #ffd53c;
+    text-decoration: underline;
+}
+
+nav li a:active {
+    color: #3cecff
 }
 
 article h1 {
     padding: 4px;
+    color: #666;
     border-bottom: 1px #ccc solid;
     background-color: #eee;
+    text-shadow: 0px 2px 4px rgba(255, 255, 255, .7);
 }
+
+article p::first-line {
+    font-size: 22px;
+}
+
+article p::first-letter {
+    font-size: 36px;
+}
+
 
 footer {
     border-top: 1px #ccc solid;
@@ -50,19 +71,53 @@ footer {
     padding: 10px 10px 0 10px;
 }
 
-article p img {
+.article-img {
+    position: relative;
     background-color: #eee;
-    float: right;
     border: 1px #ccc solid;
     padding: 10px;
     margin: 10px;
+    transition: all .5s ease;
+}
+
+::selection {
+    background-color: pink;
+}
+
+/*
+a::before {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: black;
+    border: 10px red solid;
+    content: " ";
+    z-index: 1000;
+}
+
+a::after {
+    position: relative;
+    top: 0;
+    left: 0;
+    color: black;
+    content: attr(href);
+    z-index: 1000;
+}
+*/
+
+.article-img:hover {
+    cursor: pointer;
+    background-color: #fffb93;
+    transform: scale(1.2) rotateZ(720deg);
+}
+
+/* css components */
+.float-right {
+    float: right;
 }
 
 .hidden {
     display: none;
-}
-.foo {
-    font-size: 28px;
 }
 
 .message {
@@ -112,11 +167,11 @@ label, input, select {
 }
 
 /* student-added page */
- #student-added-message {
+#student-added-message {
     background: white;
- }
+}
 
 /* student-already exists page */
- #student-already-exists-message {
+#student-already-exists-message {
     background: white;
- }
+}

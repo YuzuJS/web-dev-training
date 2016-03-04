@@ -24,7 +24,7 @@ exports.handleRequest = function (request, response) {
 
     fs.stat(filename, function (err, stats) {
         if (err) {
-            if  (err.code==="ENOENT") {
+            if (err.code === "ENOENT") {
                 serve404file(err, response);
             } else {
                 write500(err, response);

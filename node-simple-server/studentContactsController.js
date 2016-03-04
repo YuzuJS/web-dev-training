@@ -50,10 +50,6 @@ exports.handleRequest = function (req, res) {
             res.writeHead(303, "OK", { "Content-Type": "text/html" });
             writeStudentData();
         }
-        // output the decoded data to the HTTP response
-        res.write("<html><head><title>Post data</title></head><body><pre>");
-        res.write(JSON.stringify(studentInfo));
-        res.write("</pre></body></html>");
         res.end();
     });
 }

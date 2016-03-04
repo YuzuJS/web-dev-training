@@ -10,6 +10,7 @@ var studentData = {};
 function loadStudentData() {
     var fileData = fs.readFileSync(dataFile);
     studentData = JSON.parse(fileData.toString());
+    console.dir(studentData);
 }
 
 function writeStudentData() {
@@ -38,15 +39,17 @@ exports.handleRequest = function (req, res) {
     });
 
     req.on("end", function() {
-        // request ended -> do something with the data
-
-        res.setHeader("Location", "student-added.html");
-        res.writeHead(303, "OK", { "Content-Type": "text/html" });
-
-        // parse the received body data
         var studentInfo = querystring.parse(fullBody);
-        //console.dir(studentInfo);
-
+        var key = new Buffer(studentInfo.email).toString('base64');
+        if (Object.keys(studentData).indexOf(key) !== -1)  {
+            res.setHeader("Location", "student-already-exists.html");
+            res.writeHead(303, "OK", { "Content-Type": "text/html" });
+        } else {
+            studentData[key] = studentInfo;
+            res.setHeader("Location", "student-added.html");
+            res.writeHead(303, "OK", { "Content-Type": "text/html" });
+            writeStudentData();
+        }
         // output the decoded data to the HTTP response
         res.write("<html><head><title>Post data</title></head><body><pre>");
         res.write(JSON.stringify(studentInfo));

@@ -1,6 +1,6 @@
 var http = require("http");
-var staticFiles = require("./staticFileController");
-var studentContacts = require("./studentContactsController");
+var staticFiles = require("./controllers/staticFileController");
+var studentContacts = require("./controllers/studentContactsController");
 
 var server = http.createServer(function(req, res) {
     console.log(req.method + " to " + req.url);

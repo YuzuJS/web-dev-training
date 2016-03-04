@@ -19,6 +19,15 @@ function serve404file(err, response) {
     });
 }
 
+exports.init = function () {
+    // NOOP;
+};
+
+// Assume: Static file controller should be the last controller registered.
+exports.canAccept = function () {
+    return true;
+};
+
 exports.handleRequest = function (request, response) {
     var filename = path.join(process.cwd(), "static", request.url);
 

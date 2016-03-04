@@ -28,7 +28,11 @@ exports.init = function () {
             writeStudentData();
         }
     });
-}
+};
+
+exports.canAccept = function (req) {
+    return req.method === "POST" && req.url === "/students";
+};
 
 exports.handleRequest = function (req, res) {
     var fullBody = "";
@@ -52,4 +56,4 @@ exports.handleRequest = function (req, res) {
         }
         res.end();
     });
-}
+};

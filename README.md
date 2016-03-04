@@ -75,3 +75,25 @@ Repo for teaching web dev.
 - students.html
     + A list of students. Hardcode data for now (3 mocks)
 
+## session 06
+- Add ability to render dynamic html
+    + Create a View class to load template and bind data.
+- Cleanup folder structure w/ views and controllers.
+- Learn about some new css properties
+    - transition
+    - transform (scale, rotate)
+    - text-shadow
+- Learn about css psuedo classes
+    + :visited
+    + :hover
+    + :active
+    + :first-child, :last-child
+- Learn about css psuedo elements
+    + ::before, ::after
+    + ::selection
+    + ::first-line, ::first-letter
+
+## exercise group 02
+- student-added and student-already-exists html files should be using the same layout (header and footer).
+- Implement rendering list item html for students view.
+- Add consistent padding/margin to the main content area. Currently 404, error pages, success pages, seem to not have the same look.

@@ -115,3 +115,8 @@ label, input, select {
  #student-added-message {
     background: white;
  }
+
+/* student-already exists page */
+ #student-already-exists-message {
+    background: white;
+ }

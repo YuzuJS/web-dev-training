@@ -41,7 +41,7 @@ View.loadTemplates = function (cb) {
 };
 
 View.prototype.render = function (data) {
-    var data = Object.create(data);
+    var data = Object.create(data || {});
     mixinDefaultViewData(data);
 
     return this._template.replace(/{{(.*?)}}/g, function (_, varName) {

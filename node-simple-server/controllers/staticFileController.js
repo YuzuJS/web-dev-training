@@ -1,5 +1,7 @@
+var View = require("../View");
 var path = require("path");
 var fs = require("fs");
+var fourZeroFourView;
 
 function write500(err, response) {
     response.writeHead(500, err.message);
@@ -7,20 +9,13 @@ function write500(err, response) {
 }
 
 function serve404file(err, response) {
-    var filename = path.join(process.cwd(), "static", "404.html");
-    fs.readFile(filename, "binary", function (err, file) {
-        if (err) {
-            write500(err, response);
-            return;
-        }
-        response.writeHead(404);
-        response.write(file, "binary");
-        response.end();
-    });
+    response.writeHead(404);
+    response.write(fourZeroFourView.render(), "utf8");
+    response.end();
 }
 
 exports.init = function () {
-    // NOOP;
+    fourZeroFourView = new View("404");
 };
 
 // Assume: Static file controller should be the last controller registered.

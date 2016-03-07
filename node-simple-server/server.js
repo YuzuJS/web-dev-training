@@ -3,8 +3,9 @@ var View = require("./View");
 var staticFiles = require("./controllers/staticFileController");
 var studentContacts = require("./controllers/studentContactsController");
 var studentList = require("./controllers/studentListController");
+var contact = require("./controllers/contactController");
 
-var controllers = [studentContacts, studentList, staticFiles];
+var controllers = [studentContacts, studentList, contact, staticFiles];
 
 var server = http.createServer(function(req, res) {
     console.log(req.method + " to " + req.url);

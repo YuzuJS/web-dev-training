@@ -175,3 +175,19 @@ label, input, select {
 #student-already-exists-message {
     background: white;
 }
+
+.student {
+    border: 1px #0b4912 solid;
+    padding: 10px;
+    margin: 10px;
+    background: #f3f7cd;
+    list-style: none;
+    display: block;
+}
+
+.fieldName {
+    display: inline-block;
+    width: 50px;
+    font-weight: bold;
+    margin-right: 5px;
+}

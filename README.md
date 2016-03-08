@@ -6,6 +6,9 @@ Repo for teaching web dev.
 - [CanIUse.com](http://caniuse.com/)
 - [HTML5 Rocks!](http://www.html5rocks.com/en/)
 - [node 0.12 API Docs](https://nodejs.org/docs/latest-v0.12.x/api/index.html)
+- [express node framework](http://expressjs.com/)
+- [CSS Tricks](https://css-tricks.com)
+- [CSS Almanac](https://css-tricks.com/almanac/)
 
 ## session 01
 - Introduce basic html and css concepts.
@@ -97,3 +100,27 @@ Repo for teaching web dev.
 - student-added and student-already-exists html files should be using the same layout (header and footer).
 - Implement rendering list item html for students view.
 - Add consistent padding/margin to the main content area. Currently 404, error pages, success pages, seem to not have the same look.
+
+## session 07
+- Reviewed MVC server side architecture - [YouTube Video](https://www.youtube.com/watch?v=3mQjtk2YDkM)
+- Looked at the [express node framework](http://expressjs.com/)
+    + Create new express project using the `express-generator`
+    + http://expressjs.com/en/starter/generator.html
+    + command `express --ejs`
+- Reviewed DOM api
+    + element.children vs element.childNodes
+    + element.firstChild vs element.firstChildElement
+    + textNode (nodeType is 3) vs element (nodeType is 1)
+- Reviewed css layout and positioning
+    + position: absolute|relative
+    + left/top/right/bottom properties
+    + display: inline-block
+    + float: left|right 
+        + [All about floats](https://css-tricks.com/all-about-floats/)
+        + [Block Formatting Context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)
+    + clear: both
+- Introduced overflow css prop
+- JSFiddle of inline-block vs float: (https://jsfiddle.net/9dpd3ehL/2/)
+- JSFiddle of [Custom Grid System](https://jsfiddle.net/1fzheq8s/2/)
+- [Media Queries](https://css-tricks.com/css-media-queries/)
+- Future Layouts are Flexbox and MS Grid

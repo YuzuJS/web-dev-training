@@ -41,10 +41,10 @@ router.post('/', function(req, res, next) {
     var key = new Buffer(studentInfo.email).toString('base64');
     var content = "";
     if (Object.keys(studentData).indexOf(key) !== -1)  {
-        // todo: render student already exists
+        res.render('student-already-exists');
     } else {
         studentData[key] = studentInfo;
-        //todo: render student added
+        res.render('student-added');
         writeStudentData();
     }
     res.send('OK');

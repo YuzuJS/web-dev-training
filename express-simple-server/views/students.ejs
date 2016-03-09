@@ -1,0 +1,24 @@
+<% include header %>
+
+<h1>Hello Students</h1>
+
+<ol>
+    <% for(var i=0; i<students.length; i++) { %>
+        <li class="student">
+            <div>
+                <span class="fieldName">Name</span>
+                <span><%= students[i].fullname%></span>
+            </div>
+            <div>
+                <span class="fieldName">Email</span>
+                <span><%= students[i].email%></span>
+            </div>
+            <div>
+                <span class="fieldName">Age</span>
+                <span><%= students[i].age%></span>
+            </div>
+        </li>
+    <% } %>
+</ol>
+
+<% include footer %>

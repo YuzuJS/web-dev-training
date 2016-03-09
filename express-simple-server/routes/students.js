@@ -50,4 +50,15 @@ router.post('/', function(req, res, next) {
     res.send('OK');
 });
 
+router.get('/', function(req, res, next) {
+    var dataFromFile = require(dataFile);
+    var data = {};
+
+    data.students = Object.keys(dataFromFile).map(function (id) {
+        return dataFromFile[id];
+    });
+
+    res.render("students", data);
+});
+
 module.exports = router;

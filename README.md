@@ -104,6 +104,7 @@ Repo for teaching web dev.
 ## session 07
 - Reviewed MVC server side architecture - [YouTube Video](https://www.youtube.com/watch?v=3mQjtk2YDkM)
 - Looked at the [express node framework](http://expressjs.com/)
+    + Install express generator: `npm install express-generator -g`
     + Create new express project using the `express-generator`
     + http://expressjs.com/en/starter/generator.html
     + command `express --ejs`
@@ -115,7 +116,7 @@ Repo for teaching web dev.
     + position: absolute|relative
     + left/top/right/bottom properties
     + display: inline-block
-    + float: left|right 
+    + float: left|right
         + [All about floats](https://css-tricks.com/all-about-floats/)
         + [Block Formatting Context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)
     + clear: both

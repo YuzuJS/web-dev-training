@@ -124,3 +124,13 @@ Repo for teaching web dev.
 - JSFiddle of [Custom Grid System](https://jsfiddle.net/1fzheq8s/2/)
 - [Media Queries](https://css-tricks.com/css-media-queries/)
 - Future Layouts are Flexbox and MS Grid
+
+## session 08
+- Looked CSS libraries
+    + [Foundation for Sites](http://foundation.zurb.com/sites/docs/grid.html)
+    + [Foundation for Apps](http://foundation.zurb.com/apps/docs/#!/)
+    + [Bootstrap](http://getbootstrap.com/)
+    + [Materialize](http://materializecss.com/)
+
+## exercise group 03
+- Create a new express app for a brochure website using bootstrap css/js

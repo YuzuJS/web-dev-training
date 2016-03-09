@@ -16,7 +16,7 @@ main {
     min-height: 400px;
     margin: 10px auto;
     padding: 20px;
-    background: white url(../img/draft.gif) no-repeat;
+    background: white url(/images/draft.gif) no-repeat;
 }
 
 nav {
@@ -190,4 +190,10 @@ label, input, select {
     width: 50px;
     font-weight: bold;
     margin-right: 5px;
+}
+
+.stack {
+    font-weight: lighter;
+    font-size: x-small;
+    overflow: visible;
 }

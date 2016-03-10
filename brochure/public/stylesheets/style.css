@@ -3,6 +3,7 @@ body {
 }
 
 .container-main {
+  margin-top: 50px;
   padding: 50px;
   max-width: 1500px;
 }
@@ -37,8 +38,16 @@ label, input, select {
     line-height: 18px;
 }
 
-.header-img {
+.hero-image {
+  background-image: url(http://pizzamanianj.com/wp-content/uploads/2014/08/pizza-with-olives-hd-1080p-wallpapers-download.jpg);
+  height: 500px;
+}
+
+nav {
+  background: linear-gradient(to bottom, #000000, #7f7f7f);
+  position: fixed;
   width: 100%;
+  z-index: 10;
 }
 
 nav.row a {
@@ -53,4 +62,23 @@ nav.row {
 .menu-links li {
   display: inline-block;
   margin: 20px;
+}
+
+.header-logo {
+    line-height: 66px;
+}
+
+.statement-msg {
+  color: white;
+  background-color: rgba(0,0,0,.7);
+  height: 100px;
+  font-size: 32px;
+  position: relative;
+  top: 80%;
+  line-height: 100px;
+  padding: 0 80px;
+}
+
+.btn-order {
+  margin-top: 28px;
 }

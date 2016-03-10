@@ -3,6 +3,47 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-a {
-  color: #00B7FF;
+.row {
+  margin-bottom: 20px;
 }
+
+[class*="col-"] {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #eee;
+  background-color: rgba(86,61,124,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba(86,61,124,.2);
+  text-align: center;
+}
+
+form ol {
+    list-style: none;
+    padding: 0;
+    margin: 1s0px;
+    margin-bottom: 30px;
+}
+
+fieldset {
+    margin-top: 20px;
+}
+
+form li {
+    margin-bottom: 14px;
+}
+
+li label:first-of-type {
+    display: inline-block;
+    width: 130px;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+li label:not(:first-of-type) {
+    margin-right: 10px;
+}
+
+label, input, select {
+    line-height: 18px;
+}
+

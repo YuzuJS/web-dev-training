@@ -1,20 +1,10 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-.row {
-  margin-bottom: 20px;
-}
-
-[class*="col-"] {
-  padding-top: 15px;
-  padding-bottom: 15px;
-  background-color: #eee;
-  background-color: rgba(86,61,124,.15);
-  border: 1px solid #ddd;
-  border: 1px solid rgba(86,61,124,.2);
-  text-align: center;
+.container-main {
+  padding: 50px;
+  max-width: 1500px;
 }
 
 form ol {
@@ -47,3 +37,20 @@ label, input, select {
     line-height: 18px;
 }
 
+.header-img {
+  width: 100%;
+}
+
+nav.row a {
+  color: yellow;
+}
+
+nav.row {
+    background-color: black;
+    color: white;
+}
+
+.menu-links li {
+  display: inline-block;
+  margin: 20px;
+}
